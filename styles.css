@@ -59,12 +59,17 @@ body {
   text-align: center;
 }
 
+.header {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 100%;
+}
+
 /* Ensures the main body won't be under the topnav, keeps
    all content within a reasonable bound while allowing
    dynamic descaling */
 .main {
   margin: 0 auto;
-  margin-top: 100px;
   width: 100%;
   max-width: 700px;
 }
