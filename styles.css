@@ -1,19 +1,17 @@
 :root {
-  /* https://brand.cornell.edu/design-center/colors/#primary */
-  --carnelian: #B31B1B;
+  --russian-violet: #3c1642;
   --light-grey: #F7F7F7;
   --dark-grey: #222222;
+  --warm-grey: #444;
 
   --blue: #006699;
-  --secondary-red: #DF1E12;
-  --warm-dark-grey: #A2998B;
 
 }
 
 h1 {
   font-family: 'ubuntubold';
   font-size: 36px;
-  color : var(--carnelian);
+  color : var(--blue);
   text-align: center;
   padding-bottom: 18px;
 }
@@ -111,7 +109,7 @@ body {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: var(--carnelian);
+  background-color: var(--russian-violet);
   color: var(--light-grey);
 }
 
