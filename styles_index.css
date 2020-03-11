@@ -9,19 +9,34 @@
 .header img {
   width: 340px;
   height: 340px;
-  padding-right: 20px;
   object-fit: contain;
   align-self: flex-start;
 }
 
 @media screen and (max-width: 800px) {
   .header img {
-    width: 50%;
+    width: 42vw;
+  }
+
+  .header h1 {
+    font-size: 9vw;
   }
 }
 
 @media screen and (max-width: 400px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
   .header img {
-    width: 190px;
+    margin: 0;
+    align-self: center;
+    width: 169px;
+  }
+
+  .header h1 {
+    margin: 0;
+    font-size: 42px;
   }
 }
