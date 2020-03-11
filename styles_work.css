@@ -5,20 +5,20 @@
   right: 0;
 }
 
-.right_floating_div {
-  float: right;
+.left_floating_div {
+  float: left;
   width: 340px;
-  margin-left: 3px;
+  padding-left: 5vw;
   margin-right: 3px;
   margin-bottom: 20px;
   text-align: center;
 }
 
-.left_floating_div {
-  float: left;
+.right_floating_div {
+  float: right;
   width: 340px;
   margin-left: 3px;
-  margin-right: 3px;
+  padding-right: 5vw;
   margin-bottom: 20px;
   text-align: center;
 }
