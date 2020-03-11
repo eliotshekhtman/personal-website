@@ -24,6 +24,16 @@
 }
 
 @media screen and (max-width: 400px) {
+  .topnav_holder {
+    padding: 0;
+  }
+
+  .topnav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .header {
     display: flex;
     flex-direction: column;
