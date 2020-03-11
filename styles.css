@@ -53,30 +53,6 @@ body {
   color: #9F000F;
 }
 
-.fullwidth_div {
-  width: 100%;
-  left: 0;
-  right: 0;
-}
-
-.right_floating_div {
-  float: right;
-  width: 340px;
-  margin-left: 3px;
-  margin-right: 3px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.left_floating_div {
-  float: left;
-  width: 340px;
-  margin-left: 3px;
-  margin-right: 3px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
 .header {
   margin: 0 auto;
   align-items: center;
