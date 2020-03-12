@@ -13,13 +13,21 @@
   align-self: flex-start;
 }
 
+.cusd_color {
+  color: #7BCCB5;
+}
+
+.underlings_color {
+  color: #43C6DB;
+}
+
+.lhl_color {
+  color: #9F000F;
+}
+
 @media screen and (max-width: 800px) {
   .header img {
     width: 42vw;
-  }
-
-  .header h1 {
-    font-size: 9vw;
   }
 }
 
