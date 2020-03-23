@@ -1,6 +1,6 @@
 :root {
-  /* #444 #F7F7F7 #006699 #222222 */
-  --accent: #2C3539;
+  /* #444 #F7F7F7 #006699 #222222 #2C3539 */
+  --accent: #444;
   --highlight: #55828b;
   --dark: #222222;
   --light: white;
@@ -70,7 +70,7 @@ aside {
 }
 
 a {
-  color: var(--accent);
+  color: var(--dark);
   text-decoration: none;
 }
 
