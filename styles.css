@@ -115,15 +115,16 @@ body {
 .footer {
   margin: 0 auto;
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
   padding-left: 8vw;
   padding-right: 8vw;
+  text-align: center;
 }
 
 .footer img {
-  width: 40px;
+  width: 60px;
   object-fit: contain;
-  float: right;
+  /* float: right; */
 }
 
 .footer text {
