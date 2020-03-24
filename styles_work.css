@@ -7,7 +7,19 @@
   padding-right: 5px;
 }
 
+.floating_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
 .left_floating_div {
+  position: relative;
   float: left;
   width: 340px;
   margin-left: 3px;
@@ -19,9 +31,20 @@
 .left_floating_div img {
   width:300px;
   height: auto;
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.left_floating_div:hover img {
+  opacity: 0.3;
+}
+
+.left_floating_div:hover .floating_text {
+  opacity: 1;
 }
 
 .right_floating_div {
+  position: relative;
   float: right;
   width: 340px;
   margin-left: 3px;
@@ -33,6 +56,16 @@
 .right_floating_div img {
   width:300px;
   height: auto;
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.right_floating_div:hover img {
+  opacity: 0.3;
+}
+
+.right_floating_div:hover .floating_text {
+  opacity: 1;
 }
 
 @media screen and (max-width: 800px) {
