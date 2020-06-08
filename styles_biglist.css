@@ -2,7 +2,6 @@ h2 {
   font-family: 'ubuntubold';
   font-size: 60px;
   color : var(--highlight);
-  margin-bottom: 10px;
 }
 
 h3 {
@@ -11,14 +10,8 @@ h3 {
   color : var(--highlight);
 }
 
-h3 img {
-  width: 36px;
-  padding-right: 10px;
-}
-
 p {
   margin: 0px;
-  padding-left: 46px;
 }
 
 .fullwidth_div {
