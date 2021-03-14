@@ -1,15 +1,18 @@
+h1, h2, h3 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+
 h2 {
-  font-family: 'ubuntubold';
   font-size: 60px;
   color : var(--highlight);
   margin-bottom: 10px;
 }
 
 h3 {
-  font-family: 'ubuntubold';
   font-size: 48px;
   color : var(--highlight);
-  animation-name: slideLeft;
+  animation-name: slideUp;
   animation-duration: 2s;
 }
 
@@ -19,9 +22,11 @@ h3 img {
 }
 
 p {
+  font-family: 'Montserrat';
+  font-weight: 500;
   margin: 0px;
   padding-left: 46px;
-  animation-name: slideRight;
+  animation-name: slideUp;
   animation-duration: 2s;
 }
 
@@ -122,5 +127,15 @@ p {
 
   to {
     margin-right: 0%;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-top: 0%;
   }
 }
