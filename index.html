@@ -1,49 +1,429 @@
 <!DOCTYPE html>
 <html>
 
-<!-- all the stuff wanted to be included that isn't the content to show
-     ex keywords, page description for search results, CSS to style
-     content, character set declarations, etc -->
-
 <head>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="styles_index.css">
+  <link href=' http://fonts.googleapis.com/css?family=Montserrat:500,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles_simple.css">
+  <link rel="stylesheet" href="styles_resume_dyn.css">
   <title>Eliot Seo Shekhtman</title>
   <link rel='icon' href='favicon.ico' type='image/x-icon' />
 </head>
 
 <body>
+
   <div class="topnav_holder">
     <div class="topnav">
-      <a class="active" href="index.html">Home</a>
-      <a href="work.html">Work</a>
-      <a href="Spring 2020 resume.pdf" target="_blank">Resume</a>
+      <a href="#education">Education</a>
+      <a href="#research">Research</a>
+      <a href="#work">Industry</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
     </div>
   </div>
 
   <div class="header">
-    <img src="photos/Shekhtman_Eliot_Headshot_circle.png" alt="Eliot circle headshot">
-    <h1>
-      Eliot Seo Shekhtman
-    </h1>
+    <h1>Eliot Seo Shekhtman.</h1>
   </div>
+
   <div class="main">
-    <span style="text-align: center; color: var(--highlight);">
-      <p>
-        Hello! Здраствуйте! 안녕하세요!
-      </p>
-    </span>
-    <p>
-      I'm a sophomore Computer Science major at Cornell University, pursuing minors in Linguistics and
-      Operations Research. I'm involved in <a class="cusd_color" href="https://cusd.cornell.edu/projects/currents/">CUSD
-        Currents</a> as Predictions Team Member on the CS
-      Subteam, <a class="underlings_color"
-        href="https://pages.github.coecis.cornell.edu/ess239/underlings-website/index.html">Cornell
-        Undergraduates in Linguistics</a> (UnderLings) as Social Chair, and the <a class="lhl_color"
-        href="https://blogs.cornell.edu/lifehistorylab/">Life History
-        Lab</a> as Research assistant.
+    <!-- <h2>My Resume</h2> -->
+
+    <h2 id="education">Education</h2>
+    <h3><img src="assets/cornell_logo.png" alt="Cornell logo">MS CS @ Cornell University</h3>
+    <div class="within">
+      <p><b>Bowers CIS</b> | Aug 2022-May 2024 | Ithaca, NY</p>
+      <p>Masters of Science in Computer Science (Thesis)</p>
+      <p><b>Advisor:</b> Sarah Dean</p>
+      <button class="collapsible">
+        <p><b>Organizations:</b></p>
+      </button>
+      <div class="content">
+        <ul>
+          <li>Cornell Aguaclara (graduate technical advisor)</li>
+          <li>Nexus Scholar Program (graduate consultant)</li>
+        </ul>
+      </div>
+      <button class="collapsible">
+        <p><b>Relevant coursework:</b></p>
+      </button>
+      <div class="content">
+        <ul>
+          <li>Machine Learning Theory *</li>
+          <li>Machine Learning in Feedback Systems *</li>
+          <li>Deep Generative Models *</li>
+          <li>Computer Vision *†</li>
+        </ul>
+        <p>* Graduate level courses</p>
+        <p>† Ongoing coursework</p>
+        <p>(A or higher in all listed courses)</p>
+      </div>
+    </div>
+
+    <h3><img src="assets/cornell_logo.png" alt="Cornell logo">BS CS @ Cornell University</h3>
+    <div class="within">
+      <p><b>College of Engineering</b> | Aug 2018-May 2022 | Ithaca, NY</p>
+      <p>Bachelors of Science in Computer Science with a minor in Linguistics</p>
+      <p><b>GPA:</b> 3.945 / 4.00</p>
+      <button class="collapsible">
+        <p><b>Organizations:</b></p>
+      </button>
+      <div class="content">
+        <ul>
+          <li>Cornell University Sustainable Design (algorithms and predictions team lead)</li>
+          <li>Cornell Undergraduates in Linguistics (social chair)</li>
+        </ul>
+      </div>
+      <button class="collapsible">
+        <p><b>Relevant coursework:</b></p>
+      </button>
+      <div class="content">
+        <ul>
+          <li>Advanced Topics in Machine Learning *</li>
+          <li>Learning with Big Messy Data *</li>
+          <li>The Structure of Information Networks *</li>
+          <li>Principles of Large-Scale Machine Learning</li>
+          <li>Advanced Language Technologies *</li>
+          <li>Natural Language Processing</li>
+          <li>Introduction to Computer Vision</li>
+          <li>Introduction to Machine Learning</li>
+          <li>Introduction to Analysis of Algorithms</li>
+        </ul>
+        <p>* Graduate level courses</p>
+        <p>(A- or higher in all listed courses)</p>
+      </div>
+    </div>
+
+    <h3><img src="assets/bchs_logo.png" alt="BCHS logo">Bethlehem Central High School</h3>
+    <div class="within">
+      <p>Sep 2013-Jun 2018 | Delmar, NY</p>
+      <p><b>GPA:</b> 4.00 / 4.00</p>
+      <button class="collapsible">
+        <p><b>Organizations:</b></p>
+      </button>
+      <div class="content">
+        <ul>
+          <li>Science Bowl (co-captain)</li>
+          <li>Linguistics Club (president)</li>
+          <li>Science Olympiad</li>
+          <li>Masterminds</li>
+          <li>Varsity Cross-Country</li>
+          <li>Varsity Track</li>
+          <li>Varsity Swim and Dive</li>
+        </ul>
+      </div>
+      <button class="collapsible">
+        <p><b>Relevant coursework:</b></p>
+      </button>
+      <div class="content">
+        <ul>
+          <li>AP Computer Science A</li>
+          <li>Introduction to Computer Science</li>
+          <li>Digital Electronics</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="research">Research</h2>
+    <h3><img src="assets/cornell_logo.png" alt="Cornell logo">Sarah Dean Lab</h3>
+    <div class="within">
+      <p>Jan 2023-present | Ithaca, NY</p>
+      <p><b>Research direction:</b> learning theory for dynamic systems</p>
+      <ul>
+        <li>Researched regret bounds of strategic classification in a contextual bandit setting.</li>
+        <li>Characterizing convergence of multi-learner systems in the presence of strategic behavior by users as the
+          only student on the project.</li>
+        <li>Proved convergence conditions for a strategic usage setting and submitted work to AISTATS 2023.</li>
+      </ul>
+    </div>
+
+    <h3><img src="assets/cornell_logo.png" alt="Cornell logo">Kilian Weinberger Lab</h3>
+    <div class="within">
+      <p>Sept 2022-Apr 2023 | Ithaca, NY</p>
+      <p><b>Research direction:</b> natural language processing</p>
+      <ul>
+        <li>Researched and implemented applications of latent diffusion models to text generation.</li>
+        <li>Published to NeurIPS 2023.</li>
+      </ul>
+    </div>
+
+    <h3><img src="assets/cornell_logo.png" alt="Cornell logo">Udell Group</h3>
+    <div class="within">
+      <p><b>Advisor:</b> Madeleine Udell | Sept 2022-Apr 2023 | Ithaca, NY</p>
+      <p><b>Research direction:</b> unsupervised learning</p>
+      <ul>
+        <li>Published a machine learning paper in AAAI-22 on the imputation of missing data using a Gaussian copula
+          model.</li>
+        <li>Implemented frameworks and benchmarks to study active learning for distribution shift.</li>
+      </ul>
+    </div>
+
+    <h3><img src="assets/cornell_logo.png" alt="Cornell logo">Life History Lab</h3>
+    <div class="within">
+      <p><b>Advisor:</b> Marlen Gonzalez | Jun 2019-Dec 2021 | Ithaca, NY</p>
+      <p><b>Research direction:</b> computer vision for neuroscience</p>
+      <ul>
+        <li>Cleaned and scored data and automated administrative tasks in the lab using R, improving in data analysis
+          skills.</li>
+        <li>Wrote Python scripts under supervisor Dr Gonzalez to implement the Balloon Analog Risk Task (BART) for fMRI
+          and for mTurk.</li>
+        <li>Processed participants and collected data using the BART, Stroop, and Cyberball tasks in the Cornell fMRI
+          scanner for later analysis.</li>
+      </ul>
+    </div>
+
+    <h3><img src="assets/suny_logo.jpg" alt="SUNY Albany logo">SUNY Albany Forensic Chemistry Lab</h3>
+    <div class="within">
+      <p><b>Advisor:</b> Igor Lednev | Jun 2016-Aug 2017 | Albany, NY</p>
+      <p><b>Research direction:</b> computer vision for biology</p>
+      <ul>
+        <li>Wrote MATLAB scripts under supervisor Dr Lednev to conduct Singular Value Decomposition (SVD) analysis on
+          1GB of cell images to classify cellular patterns characteristic of lead toxicity.</li>
+        <li>Prepared buffer solutions, grew both bacterial cells and human kidney cells, and tested/observed the effects
+          of lead and EDTA on the latter, using light microscopy.</li>
+      </ul>
+    </div>
+
+    <h2 id="work">Industry Experience</h2>
+
+    <h3><img src="assets/goldman_sachs_logo.png" alt="Goldman Sachs logo">Goldman Sachs | Contract</h3>
+    <div class="within">
+      <p><b>Role:</b> Machine Learning Engineer @ Compliance Engineering</p>
+      <p>Sept 2022-present | Remote</p>
+      <ul>
+        <li>Creating and developing machine learning algorithms as a contract worker.</li>
+        <li>Consulted to improve and fix existing algorithms and training methods.</li>
+        <li>Productionized my NLP training pipeline, creating tests and undergoing code reviews.</li>
+      </ul>
+    </div>
+
+    <h3><img src="assets/goldman_sachs_logo.png" alt="Goldman Sachs logo">Goldman Sachs | Internship</h3>
+    <div class="within">
+      <p><b>Role:</b> Engineering Summer Analyst @ Compliance Engineering</p>
+      <p>Jun 2022-Aug 2022 | New York City, NY</p>
+      <ul>
+        <li>Trained BERT-based transformer models to classify text documents, achieving high recall and good workload
+          reduction on a test set.</li>
+        <li>Developed a semi-supervised model to highlight sections of text influential for a classification task.</li>
+        <li>Implemented a generalized pipeline for training large NLP models for future projects.</li>
+      </ul>
+    </div>
+
+    <h3><img src="assets/goldman_sachs_logo.png" alt="Goldman Sachs logo">Goldman Sachs | Internship</h3>
+    <div class="within">
+      <p><b>Role:</b> Engineering Summer Analyst @ Compliance Engineering</p>
+      <p>Jun 2021-Aug 2021 | New York City, NY</p>
+      <ul>
+        <li>Implemented MapReduce jobs to efficiently filter, tokenize, label, and embed ~10 million articles stored in
+          Google Protocol Buffer format.</li>
+        <li>Researched and developed LSTM and attention models to predict on a Named Entity Recognition task, achieving
+          high accuracy over ~5 million sentences.</li>
+        <li>Established a pipeline for training and evaluating future NLP models efficiently on new data, and
+          constructed an API leveraging the model for ease of access.</li>
+      </ul>
+    </div>
+
+    <h2 id="teaching">Teaching Experience</h2>
+
+    <h3><img src="assets/cornell_logo.png" alt="Cornell logo">CS 6785 Applied Machine Learning</h3>
+    <div class="within">
+      <p><b>Role:</b> Head Teaching Assistant</p>
+      <p>Fall 2023 | New York City, NY</p>
+      <ul>
+        <li>Created homework assignments, programming questions, quizzes, and exams.</li>
+        <li>Set grading deadlines and ensured everything was running according to schedule.</li>
+        <li>Organized regular meetings with teaching assistants and graders.</li>
+        <li>Held homework recitations to review student questions on the solutions.</li>
+      </ul>
+    </div>
+
+    <h3><img src="assets/cornell_logo.png" alt="Cornell logo">CS 4780 Introduction to Machine Learning</h3>
+    <div class="within">
+      <p><b>Role:</b> (Graduate) Teaching Assistant</p>
+      <p>Spr 2021-Spr 2023 | Ithaca, NY</p>
+      <ul>
+        <li>Created and graded assignments and exams.</li>
+        <li>Held in-person office hours.</li>
+      </ul>
+    </div>
+
+    <h3><img src="assets/cornell_logo.png" alt="Cornell logo">CS 3110 Data Structures and Functional Programming</h3>
+    <div class="within">
+      <p><b>Role:</b> Teaching Assistant</p>
+      <p>Fall 2020 | Ithaca, NY</p>
+      <ul>
+        <li>Held a recitation and unique powerpoints every week expanding on both current material and on specific
+          concerns raised by students.</li>
+        <li>Held in-person office hours and graded assignments.</li>
+      </ul>
+    </div>
+
+    <h3><img src="assets/ucode_icon.jpeg" alt="UCode logo">UCode Programming Academy</h3>
+    <div class="within">
+      <p><b>Role:</b> Instructor</p>
+      <p>Jun 2019-Sep 2020 | Ithaca, NY</p>
+      <ul>
+        <li>Taught Python, HTML, CSS, and block-based languages to students from first to eleventh grade, developing
+          interpersonal communication skills.</li>
+        <li>Developed a curriculum for teaching Python and adapted in-person curriculums for online learning.</li>
+      </ul>
+    </div>
+
+    <h3><img src="assets/bchs_logo.png" alt="BCHS logo">Bethlehem Central High School</h3>
+    <div class="within">
+      <p><b>Role:</b> Tutor</p>
+      <p>Sep 2017-May 2018 | Delmar, NY</p>
+      <ul>
+        <li>Taught high school math to other students in preparation for the Regents exam.</li>
+        <li>Prepared students for Algebra 1, Algebra 2, Geometry, and Precalculus.</li>
+      </ul>
+    </div>
+
+    <h2 id="projects">Projects</h2>
+
+    <h3><img src="assets/cusd_logo.png" alt="CUSD logo">Cornell University Sustainable Design (CUSD)</h3>
+    <div class="within">
+      <p>Feb 2020-Jun 2022 | Ithaca, NY</p>
+      <ul>
+        <li>Developed an online algorithm to predict room usages and optimize energy consumption by the HVAC system in
+          Upson Hall.</li>
+        <li>Coordinated with two other subteams in 20+ meetings to gather information.</li>
+        <li>Led the development of a script to generate accurate dummy data for initial algorithm training.</li>
+        <li>Algorithm is forecasted to reduce unnecessary HVAC operation by over 70%.</li>
+      </ul>
+    </div>
+
+    <h3><img src="assets/cornell_logo.png" alt="Cornell logo">Modeling Complex Contagion on Clique Based Networks</h3>
+    <div class="within">
+      <p>Feb 2021 | Ithaca, NY</p>
+      <ul>
+        <li>Developed a novel analytical approach in a group to approximate the final fraction of adopted nodes for a
+          contagion in a clique based network.</li>
+        <li>Implemented simulations to test the approximation, demonstrating consistency and accuracy of the model, and
+          wrote a research paper on the results.</li>
+      </ul>
+    </div>
+
+    <h3><img src="assets/cornell_logo.png" alt="Cornell logo">Nexus Scholars Program Consulting</h3>
+    <div class="within">
+      <p>May 2022-Jan 2023 | Ithaca, NY</p>
+      <ul>
+        <li>Helped with computer science and linguistics consultation in a project to create a functional online
+          dictionary for the Gayogohó꞉nǫʔ language.</li>
+        <li> Researched Gayogohó꞉nǫʔ morphology and developed software to parse nominal structures into their
+          constituent parts, enhancing the searchability of morphologically-complex words.</li>
+      </ul>
+    </div>
+
+    <h2 id="publications">Publications / Preprints</h2>
+
+    <h3><img src="assets/cornell_logo.png" alt="Cornell logo">[Title Omitted for Anonymity]</h3>
+    <div class="within">
+      <p><b>Authors:</b> <b>Eliot Shekhtman</b>, and Sarah Dean</p>
+      <p>In submission to ECOSYS 2024.</p>
+    </div>
+
+    <h3><img src="assets/cornell_logo.png" alt="Cornell logo">[Title Omitted for Anonymity]</h3>
+    <div class="within">
+      <p><b>Authors:</b> <b>Eliot Shekhtman</b>, and Sarah Dean</p>
+      <p>In submission to AISTATS 2023.</p>
+    </div>
+
+    <h3><img src="assets/cornell_logo.png" alt="Cornell logo">Latent Diffusion for Language Generation</h3>
+    <div class="within">
+      <p><b>Authors:</b> Justin Lovelace, Varsha Kishore, Chao Wan, <b>Eliot Shekhtman</b>, and Kilian Weinberger</p>
+      <p>Accepted to NeurIPS 2023.</p>
+    </div>
+
+    <h3><img src="assets/cornell_logo.png" alt="Cornell logo">Online Missing Value Imputation and Correlation Change
+      Detection for Mixed-type Data via Gaussian Copula</h3>
+    <div class="within">
+      <p><b>Authors:</b> Yuxuan Zhao, Eric Landgrebe, <b>Eliot Shekhtman</b>, and Madeline Udell</p>
+      <p>Accepted to AAAI 2022.</p>
+    </div>
+
+    <!-- <p><b>[Title Omitted for Anonymity]</b></p>
+    <p><b>Authors:</b> <b>Eliot Shekhtman</b>, and Sarah Dean</p>
+    <p>In submission to AISTATS 2023.</p>
+    <p></p>
+    <p><b>Latent Diffusion for Language Generation</b></p>
+    <p><b>Authors:</b> Justin Lovelace, Varsha Kishore, Chao Wan, <b>Eliot Shekhtman</b>, and Kilian Weinberger</p>
+    <p>Accepted to NeurIPS 2023.</p>
+    <p></p>
+    <p><b>Online Missing Value Imputation and Correlation Change Detection for Mixed-type Data via Gaussian Copula</b>
     </p>
+    <p><b>Authors:</b> Yuxuan Zhao, Eric Landgrebe, <b>Eliot Shekhtman</b>, and Madeline Udell</p>
+    <p>Accepted to AAAI 2022.</p> -->
+
   </div>
+
+
+
+  <script>
+    function getParentHeight(node) {
+      var className = node.className;
+      var height = 0;
+      while (node != null) {
+        if (node.className != className) {
+          return height
+        }
+        var content = node.nextElementSibling
+        height = height + content.scrollHeight;
+        node = node.parentNode
+      }
+      return height
+    }
+
+    function getChildrenHeightRec(node) {
+      var content = node.nextElementSibling;
+      var height = content.scrollHeight;
+      var child = null;
+      for (var i = 0; i < content.childNodes.length; i++) {
+        child = content.childNodes[i];
+        // only recurse on collapsible children
+        if (child.className === undefined) {
+          continue;
+        } if (!child.className.includes('collapsible')) {
+          continue;
+        }
+        height += getChildrenHeightRec(child)
+
+      }
+      return height;
+    }
+
+    function updateHeight(node) {
+      var content = node.nextElementSibling;
+      var height = getChildrenHeightRec(node);
+      content.style.maxHeight = 10 + height + "px";
+    }
+
+
+
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        var active = this.classList.toggle("active");
+
+        var node = this;
+        while (node != null) {
+          if (node.className === undefined) {
+            break;
+          } if (!node.className.includes('collapsible')) {
+            break;
+          }
+          updateHeight(node);
+          node = node.parentNode.previousElementSibling;
+        }
+
+        if (!active) {
+          this.nextElementSibling.style.maxHeight = 0 + "px";
+        }
+      });
+    }
+  </script>
 </body>
 
 </html>
