@@ -35,7 +35,8 @@ a {
   font-family: 'Montserrat';
   font-weight: 500;
   margin: 0px;
-  color: darkgray
+  color: darkgray;
+  text-decoration: underline;
 }
 
 li {
