@@ -62,6 +62,8 @@ li {
   outline: none;
   font-size: 24px;
   margin-bottom: 0px;
+  text-decoration: underline;
+  color: darkgrey
 }
 
 .collapsible:hover {
