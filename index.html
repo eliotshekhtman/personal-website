@@ -366,6 +366,33 @@
     <div class="within">
       <p><b>Authors:</b> Justin Lovelace, Varsha Kishore, Chao Wan, <b>Eliot Shekhtman</b>, and Kilian Weinberger</p>
       <p>Accepted to NeurIPS 2023.</p>
+      <button class="collapsible">
+        <p><b>Abstract:</b></p>
+      </button>
+      <div class="content">
+        <p>Diffusion models have achieved great success in modeling continuous data modalities such as images, audio,
+          and video, but have seen limited use in discrete domains such as language. Recent attempts to adapt diffusion
+          to language have presented diffusion as an alternative to existing pretrained language models. We view
+          diffusion and existing language models as complementary. We demonstrate that encoder-decoder language models
+          can be utilized to efficiently learn high-quality language autoencoders. We then demonstrate that continuous
+          diffusion models can be learned in the latent space of the language autoencoder, enabling us to sample
+          continuous latent representations that can be decoded into natural language with the pretrained decoder. We
+          validate the effectiveness of our approach for unconditional, class-conditional, and sequence-to-sequence
+          language generation. We demonstrate across multiple diverse data sets that our latent language diffusion
+          models are significantly more effective than previous diffusion language models.</p>
+      </div>
+      <button class="collapsible">
+        <p><b>Contributions:</b></p>
+      </button>
+      <div class="content">
+        <ul>
+          <li>Implemented loss masking and normalization for training the latent diffusion model on BART encoder
+            latents.
+          </li>
+          <li>Implemented text sampling using a BART decoder.</li>
+          <li>Ran baseline experiments using GPT-2.</li>
+        </ul>
+      </div>
     </div>
 
     <h3><a href="https://arxiv.org/abs/2009.12326"><img src="assets/cornell_logo.png" alt="Cornell logo"><b>Online
@@ -375,6 +402,31 @@
     <div class="within">
       <p><b>Authors:</b> Yuxuan Zhao, Eric Landgrebe, <b>Eliot Shekhtman</b>, and Madeline Udell</p>
       <p>Accepted to AAAI 2022.</p>
+      <button class="collapsible">
+        <p><b>Abstract:</b></p>
+      </button>
+      <div class="content">
+        <p>Missing value imputation is crucial for real-world data science workflows. Imputation is harder in the online
+          setting, as it requires the imputation method itself to be able to evolve over time. For practical
+          applications, imputation algorithms should produce imputations that match the true data distribution, handle
+          data of mixed types, including ordinal, boolean, and continuous variables, and scale to large datasets. In
+          this work we develop a new online imputation algorithm for mixed data using the Gaussian copula. The online
+          Gaussian copula model meets all the desiderata: its imputations match the data distribution even for mixed
+          data, improve over its offline counterpart on the accuracy when the streaming data has a changing
+          distribution, and on the speed (up to an order of magnitude) especially on large scale datasets. By fitting
+          the copula model to online data, we also provide a new method to detect change points in the multivariate
+          dependence structure with missing values. Experimental results on synthetic and real world data validate the
+          performance of the proposed methods.</p>
+      </div>
+      <button class="collapsible">
+        <p><b>Contributions:</b></p>
+      </button>
+      <div class="content">
+        <ul>
+          <li>Implemented the online expectation-maximization algorithm.</li>
+          <li>Ran experiments on performance in the minibatch and online settings.</li>
+        </ul>
+      </div>
     </div>
 
     <!-- <p><b>[Title Omitted for Anonymity]</b></p>
