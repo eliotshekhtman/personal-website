@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href=' http://fonts.googleapis.com/css?family=Montserrat:500,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles_simple.css">
+  <link rel="stylesheet" href="styles_resume_dyn.css">
+  <title>Eliot Seo Shekhtman</title>
+  <link rel='icon' href='favicon.ico' type='image/x-icon' />
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>Eliot Seo Shekhtman.</h1>
+  </div>
+
+  <div class="main">
+    <h2>My Resume</h2>
+    <h2>Education</h2>
+    <button class="collapsible">
+      <h3><img src="assets/cornell_logo.png" alt="Cornell logo">Cornell University</h3>
+    </button>
+    <div class="content">
+      <div class="within">
+        <p><b>College of Engineering</b></p>
+        <p>B.S. Computer Science with a minor in Linguistics</p>
+        <p><b>GPA:</b> 3.91 • Aug 2018-May 2022</p>
+        <button class="collapsible"><b>Relevant coursework:</b></button>
+        <div class="content">
+          <p>Introduction to Analysis of Algorithms; Introduction to Computer Vision;
+            Practical
+            Tools for
+            Operations Research, Machine Learning, and Data Science; Discrete Structures; Data Structures and Functional
+            Programming; Basic Engineering Probability and Statistics; Object Oriented Programming and DData Structures;
+            C++
+            Programming; Networks</p>
+        </div>
+      </div>
+    </div>
+    <button class="collapsible">
+      <h3><img src="assets/bchs_logo.png" alt="BCHS logo">Bethlehem Central High School</h3>
+    </button>
+    <div class="content">
+      <div class="within">
+        <p><b>GPA:</b> 4.00 • Sep 2013-Jun 2018</p>
+        <p><b>Organizations:</b> Science Bowl (co-captain), Linguistics Club (president), Science Olympiad,
+          Masterminds,
+          Varsity Cross-Country, Varsity Track, Varsity Swim and Dive</p>
+        <p><b>Relevant coursework:</b> AP Computer Science A, Introduction to Computer Science, Digital Electronics
+        </p>
+      </div>
+    </div>
+
+    <button class="collapsible">Open Section 2</button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+      <button class="collapsible">Open Section 2.5</button>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo
+          consequat.</p>
+      </div>
+    </div>
+    <button class="collapsible">Open Section 3</button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+      <button class="collapsible">Open Section 3.5</button>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo
+          consequat.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function getParentHeight(node) {
+      var className = node.className;
+      var height = 0;
+      while (node != null) {
+        if (node.className != className) {
+          return height
+        }
+        var content = node.nextElementSibling
+        height = height + content.scrollHeight;
+        node = node.parentNode
+      }
+      return height
+    }
+
+    function getChildrenHeightRec(node) {
+      var content = node.nextElementSibling;
+      var height = content.scrollHeight;
+      var child = null;
+      for (var i = 0; i < content.childNodes.length; i++) {
+        child = content.childNodes[i];
+        // only recurse on collapsible children
+        if (child.className === undefined) {
+          continue;
+        } if (!child.className.includes('collapsible')) {
+          continue;
+        }
+        height += getChildrenHeightRec(child)
+
+      }
+      return height;
+    }
+
+    function updateHeight(node) {
+      var content = node.nextElementSibling;
+      var height = getChildrenHeightRec(node);
+      content.style.maxHeight = 10 + height + "px";
+    }
+
+
+
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        var active = this.classList.toggle("active");
+
+        var node = this;
+        while (node != null) {
+          if (node.className === undefined) {
+            break;
+          } if (!node.className.includes('collapsible')) {
+            break;
+          }
+          updateHeight(node);
+          node = node.parentNode.previousElementSibling;
+        }
+
+        if (!active) {
+          this.nextElementSibling.style.maxHeight = 0 + "px";
+        }
+      });
+    }
+  </script>
+
+</body>
+
+
+
+</html>

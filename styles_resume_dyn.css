@@ -1,0 +1,121 @@
+h1,
+h2,
+h3 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 60px;
+  color: var(--highlight);
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 36px;
+  color: var(--highlight);
+  animation-name: slideUp;
+  animation-duration: 2s;
+}
+
+h3 img {
+  width: 27px;
+  padding-right: 10px;
+}
+
+p {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  margin: 0px;
+}
+
+a {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  margin: 0px;
+  color: darkgray
+}
+
+li {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  margin: 0px;
+}
+
+.within {
+  padding-left: 46px;
+  animation-name: slideUp;
+  animation-duration: 2s;
+}
+
+.collapsible {
+  background-color: #FFF;
+  color: black;
+  cursor: pointer;
+  padding: 0px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+.collapsible:hover {
+  background-color: #f1f1f1;
+  /* #f1f1f1 */
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 0px;
+  margin-top: 0px;
+  max-height: 0;
+  overflow: auto;
+  transition: max-height 0.2s ease-out;
+  background-color: #FFF;
+}
+
+
+
+
+@keyframes slideRight {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    margin-right: 100%;
+  }
+
+  to {
+    margin-right: 0%;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}

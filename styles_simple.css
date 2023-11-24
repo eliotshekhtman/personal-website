@@ -1,0 +1,170 @@
+:root {
+  /* #444 #F7F7F7 #006699 #222222 #2C3539 */
+  --accent: #444;
+  --highlight: #777;
+  --dark: #222222;
+  --light: white;
+
+  /*
+  --accent: #00FFAC;
+  --highlight: #C70039;
+  --dark: #FFEB00;
+  --light: #2F2A41;
+  */
+}
+
+/* Add a black background color to the top navigation */
+.topnav_holder {
+  background-color: var(--light);
+  overflow: hidden;
+  position: fixed;
+  z-index: 999 !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 8vw;
+  padding-right: 8vw;
+
+}
+
+/* Displace the actual text so it doesn't hug the sides */
+.topnav {
+  margin: 0 auto;
+  width: 100%;
+  float: left;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: center;
+  color: darkgray;
+  text-align: center;
+  padding: 16px 18px 10px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: var(--accent);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: var(--highlight);
+}
+
+h1 {
+  font-size: 72px;
+  color: var(--highlight);
+  text-align: center;
+  padding-bottom: 18px;
+}
+
+h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+p {
+  font-size: 24px;
+  color: darkgray
+}
+
+li {
+  font-size: 24px;
+  color: darkgray
+}
+
+aside {
+  margin-bottom: 10px;
+}
+
+a {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--highlight);
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.4;
+  background-color: var(--light);
+}
+
+.special {
+  color: var(--highlight);
+  font-weight: bold;
+}
+
+.header {
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 100px;
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+}
+
+.header img {
+  width: 900px;
+}
+
+/* Ensures the main body won't be under the topnav, keeps
+   all content within a reasonable bound while allowing
+   dynamic descaling */
+.main {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 900px;
+}
+
+.footer {
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 70px;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  text-align: center;
+}
+
+.footer img {
+  width: 60px;
+  object-fit: contain;
+  /* float: right; */
+}
+
+.footer text {
+  color: var(--accent);
+  float: left;
+}
+
+@media screen and (max-width: 900px) {
+  .header img {
+    width: 90vw;
+  }
+
+  .header h1 {
+    font-size: 8vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav_holder {
+    padding: 0;
+  }
+
+  .topnav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  p {
+    font-size: 4vw;
+  }
+}
