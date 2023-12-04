@@ -2,7 +2,8 @@
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
 }
@@ -22,6 +23,20 @@ h3 {
 
 h3 img {
   width: 27px;
+  padding-right: 10px;
+}
+
+h4 {
+  margin-bottom: 0;
+  font-size: 24px;
+  color: var(--highlight);
+  animation-name: slideUp;
+  animation-duration: 2s;
+}
+
+h4 img {
+  margin-bottom: 0;
+  width: 18px;
   padding-right: 10px;
 }
 
