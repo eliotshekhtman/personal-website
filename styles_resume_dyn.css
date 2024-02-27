@@ -15,14 +15,14 @@ h2 {
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 24px;
   color: var(--highlight);
   animation-name: slideUp;
   animation-duration: 2s;
 }
 
 h3 img {
-  width: 27px;
+  width: 18px;
   padding-right: 10px;
 }
 
@@ -87,16 +87,16 @@ li {
 }
 
 .collapsible:after {
-  content: '\002B';
+  /* content: '\002B'; */
   color: white;
   font-weight: bold;
   float: right;
   margin-left: 5px;
 }
 
-.active:after {
+/* .active:after {
   content: "\2212";
-}
+} */
 
 .content {
   padding: 0 0px;
