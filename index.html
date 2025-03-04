@@ -2,7 +2,6 @@
 <html>
 
 <head>
-  <link href='https://fonts.googleapis.com/css2?family=Montserrat&display=swap' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="styles_simple.css">
   <link rel="stylesheet" href="styles_resume_dyn.css">
   <title>Eliot Seo Shekhtman</title>
@@ -33,7 +32,7 @@
 
     <h2 id="about"><b>ABOUT ME</b></h2>
     <div class="within">
-      <img src="photos/Shekhtman_Eliot_Headshot.jpg" alt="headshot" width="180vw" align="left" hspace="10px">
+      <img src="photos/square-headshot.jpg" alt="headshot" width="180vw" align="left" hspace="10px">
 
       <p>I am a <a href="https://www.cis.upenn.edu/graduate/program-offerings/doctoral-program/">Ph.D. student</a> in
         Computer and Information Science at the <a href="https://www.upenn.edu/">University of Pennsylvania</a>, where I
@@ -86,6 +85,16 @@
       <p><b>Penn Engineering</b> | Aug 2024-present | Philadelphia, PA</p>
       <p>Ph.D. in Computer and Information Science</p>
       <p><b>Advisor:</b> <a href="https://nikolaimatni.github.io/">Nikolai Matni</a></p>
+      <button class="collapsible">
+        <p><b>Relevant coursework:</b></p>
+      </button>
+      <div class="content">
+        <ul>
+          <li>Learning for Dynamics and Control</li>
+          <li>Learning with Conditional Guarantees</li>
+          <li>Theory of Machine Learning</li>
+          <li>Modern Convex Optimization</li>
+      </div>
     </div>
 
     <h3><img src="assets/cornell_logo.png" alt="Cornell logo">MS @ Cornell University</h3>
@@ -186,15 +195,24 @@
     </div>
 
     <h2 id="research"><b>RESEARCH</b></h2>
+    <h3><img src="assets/upenn_logo.png" alt="UPenn logo">Nikolai Matni Lab</h3>
+    <div class="within">
+      <p>Aug 2024-present | Philadelphia, PA</p>
+      <p><b>Research direction:</b> system identification of dynamic systems</p>
+      <ul>
+        <li>Researching information-theoretic bounds on generalized linear systems.</li>
+      </ul>
+    </div>
+
     <h3><img src="assets/cornell_logo.png" alt="Cornell logo">Sarah Dean Lab</h3>
     <div class="within">
-      <p>Jan 2023-present | Ithaca, NY</p>
+      <p>Jan 2023-May 2024 | Ithaca, NY</p>
       <p><b>Research direction:</b> learning theory for dynamic systems</p>
       <ul>
         <li>Researched regret bounds of strategic classification in a contextual bandit setting.</li>
-        <li>Characterizing convergence of multi-learner systems in the presence of strategic behavior by users as the
-          only student on the project.</li>
-        <li>Proved convergence conditions for a strategic usage setting, and published work to AISTATS 2024.</li>
+        <li>Characterizing convergence of multi-learner systems in the presence of strategic behavior by users.</li>
+        <li>Proved convergence conditions for a strategic usage setting, and published single-author work to AISTATS
+          2024.</li>
       </ul>
     </div>
 
@@ -247,14 +265,19 @@
 
     <h2 id="work"><b>INDUSTRY EXPERIENCE</b></h2>
 
-    <h3><img src="assets/goldman_sachs_logo.png" alt="Goldman Sachs logo">Goldman Sachs | Contract</h3>
+    <h3><img src="assets/goldman_sachs_logo.png" alt="Goldman Sachs logo">Goldman Sachs | Contingent Worker</h3>
     <div class="within">
       <p><b>Role:</b> Machine Learning Engineer @ Compliance Engineering</p>
       <p>Sept 2022-present | Remote</p>
       <ul>
-        <li>Creating and developing machine learning algorithms and pipelines.</li>
+        <!-- <li>Creating and developing machine learning algorithms and pipelines.</li> -->
+        <li>Developed and productionized an internal distributed automated machine learning (AutoML) package capable of
+          training
+          and
+          evaluating thousands of
+          models simultaneously.</li>
         <li>Consulted to improve and fix existing algorithms and training methods.</li>
-        <li>Productionized my NLP training pipeline, creating tests and undergoing code reviews.</li>
+        <li>Productionized an LLM training pipeline, utilizing test-driven development.</li>
       </ul>
     </div>
 
