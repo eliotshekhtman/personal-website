@@ -38,29 +38,29 @@
         Computer and Information Science at the <a href="https://www.upenn.edu/">University of Pennsylvania</a>, where I
         am advised by
         Professor <a href="https://nikolaimatni.github.io/">Nikolai Matni</a>.
-        I additionally work as a contract machine learning engineer for <a href="https://www.goldmansachs.com/">Goldman
+        Previously, I worked as a contingent machine learning engineer for <a
+          href="https://www.goldmansachs.com/">Goldman
           Sachs</a> in the <a href="https://www.goldmansachs.com/careers/our-firm/global-compliance/">Compliance
           Engineering</a> division.
       </p>
     </div>
     <div class="within">
-      <p>My research interests are in <b>learning theory for dynamic systems</b> with an emphasis on <b>fairness</b>,
-        with the goal
-        of eventually applying my knowledge and experience to emphasize social welfare in deployed models and
-        algorithms.
-        Prior research in this field focused on the dynamics created by
-        adversarial strategic users interacting with multiple services.
+      <p>My research interests are in the intersection of <b>machine learning</b>, <b>control theory</b>, and
+        <b>learning theory for dynamic systems</b>,
+        with the goal of studying fairness in deployed systems.
+        <!-- Prior research in learning for games focused on the dynamics created by -->
+        <!-- adversarial strategic users interacting with multiple services. -->
         <!-- a multi-learner setting where adversarial users could strategically choose how much to use each of several services.   -->
-        This work has been accepted to <a href="https://aistats.org/aistats2024/index.html">AISTATS 2024</a>, and
-        a trimmed version has been accepted as an oral presentation to the AAAI workshop <a
-          href="https://sites.google.com/view/recommender-ecosystems/home">EcoSys 2024</a>.
-        I additionally have two published papers in machine learning on the applications side.
+        <!-- This work has been accepted to <a href="https://aistats.org/aistats2024/index.html">AISTATS 2024</a>, and -->
+        <!-- a trimmed version has been accepted as an oral presentation to the AAAI workshop <a -->
+        <!-- href="https://sites.google.com/view/recommender-ecosystems/home">EcoSys 2024</a>. -->
+        <!-- I additionally have two published papers in machine learning on the applications side. -->
 
-        <!-- I was formerly an <a href="https://www.cs.cornell.edu/ms">CS MS</a> student in the <a
+        I was formerly a <a href="https://www.cs.cornell.edu/ms">CS MS</a> student in the <a
           href="https://cis.cornell.edu/">College of Computing and Information Science</a> at <a
           href="https://www.cornell.edu/">Cornell University</a> with a minor in <a
           href="https://linguistics.cornell.edu/">Linguistics</a>, where I was advised by <a
-          href="https://sdean.website/">Sarah Dean</a>. -->
+          href="https://sdean.website/">Sarah Dean</a>.
         <!-- This work has been submitted to <a href="https://aistats.org/aistats2024/index.html">AISTATS 2024</a> and was
         additionally trimmed for a workshop submission to <a
           href="https://sites.google.com/view/recommender-ecosystems/home">ECOSYS 2024</a>, and is currently pending
@@ -200,7 +200,7 @@
       <p>Aug 2024-present | Philadelphia, PA</p>
       <p><b>Research direction:</b> system identification of dynamic systems</p>
       <ul>
-        <li>Researching information-theoretic bounds on generalized linear systems.</li>
+        <li>Researched information-theoretic parameter recovery bounds on dynamic systems.</li>
       </ul>
     </div>
 
@@ -268,7 +268,7 @@
     <h3><img src="assets/goldman_sachs_logo.png" alt="Goldman Sachs logo">Goldman Sachs | Contingent Worker</h3>
     <div class="within">
       <p><b>Role:</b> Machine Learning Engineer @ Compliance Engineering</p>
-      <p>Sept 2022-present | Remote</p>
+      <p>Sept 2022-Mar 2025 | Remote</p>
       <ul>
         <!-- <li>Creating and developing machine learning algorithms and pipelines.</li> -->
         <li>Developed and productionized an internal distributed automated machine learning (AutoML) package capable of
@@ -412,11 +412,41 @@
 
     <h2 id="publications"><b>PUBLICATIONS/PREPRINTS</b></h2>
 
+    <h3><b><a href="https://arxiv.org/abs/2510.06434"><img src="assets/upenn_logo.png" alt="UPenn logo"><b>Nearly
+            Instance-Optimal Parameter Recovery from Many Trajectories via Hellinger Localization</a></b> (arXiv
+      preprint)
+    </h3>
+    <div class="within">
+      <p><b>Authors:</b> <b>Eliot Shekhtman*</b>, Yichen Zhou*, Ingvar Ziemann, Nikolai Matni, and Stephen Tu</p>
+      <button class="collapsible">
+        <p><b>Abstract:</b></p>
+      </button>
+      <div class="content">
+        <p>Learning from temporally-correlated data is a core facet of modern machine learning. Yet our understanding of
+          sequential learning remains incomplete, particularly in the multi-trajectory setting where data consists of
+          many independent realizations of a time-indexed stochastic process. This important regime both reflects modern
+          training pipelines such as for large foundation models, and offers the potential for learning without the
+          typical mixing assumptions made in the single-trajectory case. However, instance-optimal bounds are known only
+          for least-squares regression with dependent covariates; for more general models or loss functions, the only
+          broadly applicable guarantees result from a reduction to either i.i.d. learning, with effective sample size
+          scaling only in the number of trajectories, or an existing single-trajectory result when each individual
+          trajectory mixes, with effective sample size scaling as the full data budget deflated by the mixing-time.
+          In this work, we significantly broaden the scope of instance-optimal rates in multi-trajectory settings via
+          the Hellinger localization framework, a general approach for maximum likelihood estimation. Our method
+          proceeds by first controlling the squared Hellinger distance at the path-measure level via a reduction to
+          i.i.d. learning, followed by localization as a quadratic form in parameter space weighted by the trajectory
+          Fisher information. This yields instance-optimal bounds that scale with the full data budget under a broad set
+          of conditions. We instantiate our framework across four diverse case studies: a simple mixture of Markov
+          chains, dependent linear regression under non-Gaussian noise, generalized linear models with non-monotonic
+          activations, and linear-attention sequence models. In all cases, our bounds nearly match the instance-optimal
+          rates from asymptotic normality, substantially improving over standard reductions.</p>
+      </div>
+    </div>
+
     <h3><b><a href="https://arxiv.org/abs/2401.16422"><img src="assets/cornell_logo.png" alt="Cornell logo"><b>Strategic
-            Usage in a Multi-Learner Setting</a></b></h3>
+            Usage in a Multi-Learner Setting</a></b> (AISTATS 2024)</h3>
     <div class="within">
       <p><b>Authors:</b> <b>Eliot Shekhtman</b>, and Sarah Dean</p>
-      <p>Accepted to AISTATS 2024.</p>
       <p>[ <a href="strat-usage/aistats-poster.pdf">poster</a> ]</p>
       <button class="collapsible">
         <p><b>Abstract:</b></p>
@@ -439,10 +469,10 @@
       </div>
     </div>
 
-    <h3><img src="assets/cornell_logo.png" alt="Cornell logo">Strategic Usage in a Multi-Learner Setting</h3>
+    <h3><img src="assets/cornell_logo.png" alt="Cornell logo">Strategic Usage in a Multi-Learner Setting (EcoSys 2024 @
+      AAAI)</h3>
     <div class="within">
       <p><b>Authors:</b> <b>Eliot Shekhtman</b>, and Sarah Dean</p>
-      <p>Accepted to the AAAI 2024 workshop EcoSys 2024.</p>
       <p>[ <a href="strat-usage/ecosys-poster-revised.pdf">poster</a> ][ <a href="strat-usage/strat-usage-oral.pdf">oral
           presentation slides</a> ][ <a href="strat-usage/lightning-talk.pdf">lighting talk</a> ] </p>
       <button class="collapsible">
@@ -463,10 +493,9 @@
     </div>
 
     <h3><b><a href="https://arxiv.org/abs/2212.09462"><img src="assets/cornell_logo.png" alt="Cornell logo"><b>Latent
-            Diffusion for Language Generation</b></a></h3>
+            Diffusion for Language Generation</b></a> (NeurIPS 2023)</h3>
     <div class="within">
       <p><b>Authors:</b> Justin Lovelace, Varsha Kishore, Chao Wan, <b>Eliot Shekhtman</b>, and Kilian Weinberger</p>
-      <p>Accepted to NeurIPS 2023.</p>
       <button class="collapsible">
         <p><b>Abstract:</b></p>
       </button>
@@ -499,10 +528,9 @@
     <h3><a href="https://arxiv.org/abs/2009.12326"><img src="assets/cornell_logo.png" alt="Cornell logo"><b>Online
           Missing
           Value Imputation and Correlation Change
-          Detection for Mixed-type Data via Gaussian Copula</b></a></h3>
+          Detection for Mixed-type Data via Gaussian Copula</b></a> (AAAI 2022)</h3>
     <div class="within">
       <p><b>Authors:</b> Yuxuan Zhao, Eric Landgrebe, <b>Eliot Shekhtman</b>, and Madeline Udell</p>
-      <p>Accepted to AAAI 2022.</p>
       <button class="collapsible">
         <p><b>Abstract:</b></p>
       </button>
