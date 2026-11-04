@@ -141,6 +141,7 @@ ul {
   text-align: center;
   padding: 16px 18px 10px;
   font-size: 22px;
+  white-space: nowrap;
 }
 
 .topnav a:hover {
@@ -205,6 +206,7 @@ ul {
 
   .topnav {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
@@ -214,4 +216,3 @@ ul {
     font-size: 4vw;
   }
 }
-
