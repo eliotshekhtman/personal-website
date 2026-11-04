@@ -3,7 +3,7 @@
 /* Colors */
 :root {
   --accent: #696969;
-  --highlight: #006699;
+  --highlight: #236699;
   --dark: #4d4d4d;
   --light: #EEEEEE;
 }
@@ -222,6 +222,10 @@ ul {
 } */
 
 @media screen and (max-width: 600px) {
+  .topnav_holder {
+    padding: 0;
+  }
+
   :target {
     scroll-margin-top: 90px;
   }
