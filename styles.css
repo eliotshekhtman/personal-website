@@ -13,6 +13,10 @@ html {
   scroll-behavior: smooth;
 }
 
+:target {
+  scroll-margin-top: 60px;
+}
+
 body {
   font-family: "Mate", serif;
   font-size: 18px;
@@ -193,7 +197,7 @@ ul {
 }
 
 /* Existing responsive adjustments */
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   .header h1 {
     font-size: 8vw;
   }
@@ -214,5 +218,11 @@ ul {
   p,
   .collapsible-label {
     font-size: 4vw;
+  }
+} */
+
+@media screen and (max-width: 600px) {
+  :target {
+    scroll-margin-top: 90px;
   }
 }
