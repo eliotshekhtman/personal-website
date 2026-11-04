@@ -28,14 +28,15 @@ html {
   width: 100%;
   padding-left: 8vw;
   padding-right: 8vw;
-
+  box-sizing: border-box;
 }
 
 /* Displace the actual text so it doesn't hug the sides */
 .topnav {
   margin: 0 auto;
   width: 100%;
-  float: left;
+  float: none;
+  text-align: center;
 }
 
 /* Style the links inside the navigation bar */
