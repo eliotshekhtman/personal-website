@@ -1,9 +1,9 @@
 :root {
   /* #444 #F7F7F7 #006699 #222222 #2C3539 */
-  --accent: #444;
-  --highlight: #777;
-  --dark: #222222;
-  --light: white;
+  --accent: #696969;
+  --highlight: #006699;
+  --dark: #4d4d4d;
+  --light: #EEEEEE;
 
   /*
   --accent: #00FFAC;
@@ -41,26 +41,16 @@ html {
 /* Style the links inside the navigation bar */
 .topnav a {
   float: center;
-  color: darkgray;
+  color: var(--highlight);
   text-align: center;
   padding: 16px 18px 10px;
   text-decoration: none;
   font-size: 22px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  color: var(--accent);
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  color: var(--highlight);
-}
-
 h1 {
   font-size: 72px;
-  color: var(--highlight);
+  color: var(--dark);
   text-align: center;
   padding-bottom: 18px;
 }
@@ -73,12 +63,12 @@ h3 {
 
 p {
   font-size: 22px;
-  color: darkgray
+  color: var(--dark)
 }
 
 li {
   font-size: 22px;
-  color: darkgray
+  color: var(--dark)
 }
 
 aside {
@@ -86,12 +76,24 @@ aside {
 }
 
 a {
-  color: var(--dark);
-  text-decoration: underline;
+  color: var(--highlight);
+  text-decoration: none;
 }
 
 a:hover {
   color: var(--highlight);
+  text-decoration: underline;
+}
+
+/* Change the color of links on hover */
+.topnav a {
+  color: var(--accent);
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: var(--dark);
+  text-decoration: underline;
 }
 
 body {
