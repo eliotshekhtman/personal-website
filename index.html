@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <link rel="stylesheet" href="styles_index.css">
-  <link rel="stylesheet" href="styles_resume_dyn.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
   <title>Eliot Seo Shekhtman</title>
   <link rel='icon' href='favicon.ico' type='image/x-icon' />
 </head>
@@ -19,7 +20,7 @@
       <a href="#teaching">teaching</a>
       <a href="#projects">projects</a>
       <a href="#publications">publications</a>
-      <a href="fa2025_resume.pdf" target=”_blank”>resume</a>
+      <a href="fa2025_resume.pdf" target="_blank">resume</a>
     </div>
   </div>
 
@@ -32,7 +33,7 @@
 
     <h2 id="about"><b>ABOUT ME</b></h2>
     <div class="within">
-      <img src="photos/square-headshot.jpg" alt="headshot" width="180vw" align="left" hspace="10px">
+      <img src="photos/square-headshot.jpg" alt="headshot" class="headshot" width="180">
 
       <p>I am a <a href="https://catalog.upenn.edu/graduate/programs/computer-information-science-phd/">Ph.D.
           student</a> in
@@ -73,7 +74,7 @@
         and <a href="https://www.linkedin.com/in/eliot-shekhtman/">LinkedIn</a> profiles.</p>
     </div>
     <div class="within">
-      <p style=margin-top:29px>In my free time, I like <a href="https://www.instagram.com/eliot.food/">cooking</a>!
+      <p class="free-time">In my free time, I like <a href="https://www.instagram.com/eliot.food/">cooking</a>!
       </p>
     </div>
     <!-- working out, and <a href="https://www.goodreads.com/user/show/174639586">reading</a>! -->
@@ -85,7 +86,7 @@
       <p>Ph.D. in Computer and Information Science</p>
       <p><b>Advisor:</b> <a href="https://nikolaimatni.github.io/">Nikolai Matni</a></p>
       <button class="collapsible">
-        <p><b>Relevant coursework:</b></p>
+        <span class="collapsible-label"><b>Relevant coursework:</b></span>
       </button>
       <div class="content">
         <ul>
@@ -94,6 +95,7 @@
           <li>Theory of Machine Learning</li>
           <li>Modern Convex Optimization</li>
           <li>Learning in Games and Games in Learning</li>
+        </ul>
       </div>
     </div>
 
@@ -105,7 +107,7 @@
         Linguistics</p>
       <p><b>Advisor:</b> <a href="https://sdean.website/">Sarah Dean</a></p>
       <button class="collapsible">
-        <p><b>Organizations:</b></p>
+        <span class="collapsible-label"><b>Organizations:</b></span>
       </button>
       <div class="content">
         <ul>
@@ -114,7 +116,7 @@
         </ul>
       </div>
       <button class="collapsible">
-        <p><b>Relevant coursework:</b></p>
+        <span class="collapsible-label"><b>Relevant coursework:</b></span>
       </button>
       <div class="content">
         <ul>
@@ -136,7 +138,7 @@
       <p>Bachelors of Science in Computer Science with a minor in Linguistics</p>
       <p><i>Magna Cum Laude with Honors</i></p>
       <button class="collapsible">
-        <p><b>Organizations:</b></p>
+        <span class="collapsible-label"><b>Organizations:</b></span>
       </button>
       <div class="content">
         <ul>
@@ -145,7 +147,7 @@
         </ul>
       </div>
       <button class="collapsible">
-        <p><b>Relevant coursework:</b></p>
+        <span class="collapsible-label"><b>Relevant coursework:</b></span>
       </button>
       <div class="content">
         <ul>
@@ -169,7 +171,7 @@
       <p>Sep 2013-Jun 2018 | Delmar, NY</p>
       <!-- <p><b>GPA:</b> 4.00 / 4.00</p> -->
       <button class="collapsible">
-        <p><b>Organizations:</b></p>
+        <span class="collapsible-label"><b>Organizations:</b></span>
       </button>
       <div class="content">
         <ul>
@@ -183,7 +185,7 @@
         </ul>
       </div>
       <button class="collapsible">
-        <p><b>Relevant coursework:</b></p>
+        <span class="collapsible-label"><b>Relevant coursework:</b></span>
       </button>
       <div class="content">
         <ul>
@@ -412,16 +414,16 @@
 
     <h2 id="publications"><b>PUBLICATIONS/PREPRINTS</b></h2>
 
-    <h3><b><a href="https://arxiv.org/abs/2510.06434"><img src="assets/upenn_logo.png" alt="UPenn logo"><b>Nearly
-            Instance-Optimal Parameter Recovery from Many Trajectories via Hellinger Localization</a></b> (arXiv
-      preprint)
+    <h3><a href="https://arxiv.org/abs/2510.06434"><img src="assets/upenn_logo.png" alt="UPenn logo"><b>Nearly
+            Instance-Optimal Parameter Recovery from Many Trajectories via Hellinger Localization</b></a> <b>(arXiv
+      preprint)</b>
     </h3>
     <div class="within">
       <p><b>Authors:</b> <b>Eliot Shekhtman*</b>, Yichen Zhou*, Ingvar Ziemann, Nikolai Matni, and Stephen Tu</p>
       <p><i>"A framework for bounding MLE parameter recovery rates for broad classes of multi-trajectory sequential
           learning settings."</i></p>
       <!-- <button class="collapsible">
-        <p><b>Abstract:</b></p>
+        <span class="collapsible-label"><b>Abstract:</b></span>
       </button>
       <div class="content">
         <p>Learning from temporally-correlated data is a core facet of modern machine learning. Yet our understanding of
@@ -445,8 +447,8 @@
       </div> -->
     </div>
 
-    <h3><b><a href="https://arxiv.org/abs/2401.16422"><img src="assets/cornell_logo.png" alt="Cornell logo"><b>Strategic
-            Usage in a Multi-Learner Setting</a></b> (AISTATS 2024)</h3>
+    <h3><a href="https://arxiv.org/abs/2401.16422"><img src="assets/cornell_logo.png" alt="Cornell logo"><b>Strategic
+            Usage in a Multi-Learner Setting</b></a> <b>(AISTATS 2024)</b></h3>
     <div class="within">
       <p><b>Authors:</b> <b>Eliot Shekhtman</b>, and Sarah Dean</p>
       <p>[ <a href="strat-usage/aistats-poster.pdf">poster</a> ]</p>
@@ -454,7 +456,7 @@
           maximization
           efforts?"</i></p>
       <!-- <button class="collapsible">
-        <p><b>Abstract:</b></p>
+        <span class="collapsible-label"><b>Abstract:</b></span>
       </button>
       <div class="content">
         <p>Real-world systems often involve some pool of users choosing between a set of services. With the increase in
@@ -481,7 +483,7 @@
       <p>[ <a href="strat-usage/ecosys-poster-revised.pdf">poster</a> ][ <a href="strat-usage/strat-usage-oral.pdf">oral
           presentation slides</a> ][ <a href="strat-usage/lightning-talk.pdf">lighting talk</a> ] </p>
       <button class="collapsible">
-        <p><b>Abstract:</b></p>
+        <span class="collapsible-label"><b>Abstract:</b></span>
       </button>
       <div class="content">
         <p>Real-world systems often involve some pool of users choosing between a set of services. Extensive prior
@@ -497,15 +499,15 @@
       </div>
     </div>
 
-    <h3><b><a href="https://arxiv.org/abs/2212.09462"><img src="assets/cornell_logo.png" alt="Cornell logo"><b>Latent
-            Diffusion for Language Generation</b></a> (NeurIPS 2023)</h3>
+    <h3><a href="https://arxiv.org/abs/2212.09462"><img src="assets/cornell_logo.png" alt="Cornell logo"><b>Latent
+            Diffusion for Language Generation</b></a> <b>(NeurIPS 2023)</b></h3>
     <div class="within">
       <p><b>Authors:</b> Justin Lovelace, Varsha Kishore, Chao Wan, <b>Eliot Shekhtman</b>, and Kilian Weinberger</p>
       <p><i>"Fitting a diffusion model on the latent space of a pretrained language model enables sample-efficient
           unconditional, class-conditional, and sequence-to-sequence language generation, improving on prior efforts to
           use diffusion for language."</i></p>
       <!-- <button class="collapsible">
-        <p><b>Abstract:</b></p>
+        <span class="collapsible-label"><b>Abstract:</b></span>
       </button>
       <div class="content">
         <p>Diffusion models have achieved great success in modeling continuous data modalities such as images, audio,
@@ -520,7 +522,7 @@
           models are significantly more effective than previous diffusion language models.</p>
       </div> -->
       <button class="collapsible">
-        <p><b>Contributions:</b></p>
+        <span class="collapsible-label"><b>Contributions:</b></span>
       </button>
       <div class="content">
         <ul>
@@ -542,7 +544,7 @@
       <p><i>"A novel online algorithm for scalable and flexible missing value imputation using the Gaussian copula."</i>
       </p>
       <!-- <button class="collapsible">
-        <p><b>Abstract:</b></p>
+        <span class="collapsible-label"><b>Abstract:</b></span>
       </button>
       <div class="content">
         <p>Missing value imputation is crucial for real-world data science workflows. Imputation is harder in the online
@@ -558,7 +560,7 @@
           performance of the proposed methods.</p>
       </div> -->
       <button class="collapsible">
-        <p><b>Contributions:</b></p>
+        <span class="collapsible-label"><b>Contributions:</b></span>
       </button>
       <div class="content">
         <ul>
