@@ -101,8 +101,9 @@ ul {
   overflow-wrap: anywhere;
 }
 
-.main {
+.intro {
   text-align: justify;
+  hyphens: auto;
 }
 
 .header {
